@@ -2,7 +2,7 @@
 
 This is my personal portfolio website showcasing my projects, technical skills, and development experience. It also includes a direct resume download feature for easy access.
 
-🔗 Live Demo 👉 View Portfolio
+🔗 Live Demo 👉 https://portfolio-web-three-dun.vercel.app
 
 🛠️ Tech Stack Frontend: HTML, CSS, JavaScript, React Backend: Node.js, Express (if used) Tools: Git, GitHub, VS Code
 
