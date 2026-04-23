@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pritesh Jethva — Portfolio</title>
+  <meta name="description"
+    content="A modern glassmorphism portfolio showcasing projects, skills, and contact information." />
+
+  <meta name="theme-color" content="#0b1220" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid"></div>
+    <div class="noise"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner glass">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">PJ</div>
+        <div class="brand__text">
+          <div class="brand__name">Pritesh Jethva</div>
+          <div class="brand__tag">Developer • Designer • Builder</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#experience">Experience</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#about">About</a>
+        <a class="nav__link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn icon-btn--menu" type="button" id="menuToggle" aria-label="Open menu"
+          aria-controls="mobileMenu" aria-expanded="false">
+          <span class="icon-btn__icon" aria-hidden="true">☰</span>
+        </button>
+        <button class="icon-btn" type="button" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-btn__icon" aria-hidden="true">☾</span>
+        </button>
+        <a class="btn btn--primary" href="#contact">Let’s talk</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="drawer__panel glass">
+      <div class="drawer__head">
+        <div class="drawer__title">Menu</div>
+        <button class="icon-btn" type="button" id="menuClose" aria-label="Close menu">
+          <span class="icon-btn__icon" aria-hidden="true">✕</span>
+        </button>
+      </div>
+      <nav class="drawer__nav" aria-label="Mobile">
+        <a class="drawer__link" href="#projects">Projects</a>
+        <a class="drawer__link" href="#experience">Experience</a>
+        <a class="drawer__link" href="#skills">Skills</a>
+        <a class="drawer__link" href="#about">About</a>
+        <a class="drawer__link" href="#contact">Contact</a>
+      </nav>
+      <div class="drawer__actions">
+        <a class="btn btn--primary" href="#contact">Let’s talk</a>
+        <button class="btn btn--ghost" type="button" id="copyEmailBtn" data-copy="you@example.com">
+          Copy email
+        </button>
+      </div>
+    </div>
+    <button class="drawer__backdrop" type="button" aria-label="Close menu"></button>
+  </div>
+
+  <main id="main" class="main">
+    <section class="container hero">
+      <div class="hero__card glass">
+        <div class="hero__meta">
+          <span class="pill">Available for opportunities</span>
+          <span class="pill pill--subtle" title="Based in your location">📍 Surat</span>
+        </div>
+
+        <h1 class="hero__title">
+          Building scalable web applications with clean UI and efficient backend systems.
+        </h1>
+        <p class="hero__lead">
+          I’m <strong>Pritesh</strong>, a <strong>Full‑Stack Developer</strong> focused on building real-world applications using React, Node.js, and MongoDB.
+I develop responsive interfaces, design REST APIs, and deliver performant, production-ready solutions.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">View projects</a>
+          <a class="btn btn--primary" href="#contact">Contact</a>
+          <a class="btn btn--primary" target="_blank" href="https://drive.google.com/uc?export=download&id=1SDbr4C6kIebBseeDuIeaFR4DP9ous3qD" download>
+            Download Resume
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hero__stats reveal" style="--reveal-delay:300ms" role="list" aria-label="Highlights">
+          <div class="stat" role="listitem">
+            <div class="stat__value">+2</div>
+            <div class="stat__label">Years building</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__value">+3</div>
+            <div class="stat__label">Projects</div>
+          </div>
+          <div class="stat" role="listitem">
+            <div class="stat__value">∞</div>
+            <div class="stat__label">Curiosity</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__side">
+        <div class="card glass card--profile reveal">
+          <div class="profile">
+            <div class="avatar" aria-hidden="true">
+              <span>PJ</span>
+            </div>
+            <div>
+              <div class="profile__name">Pritesh Jethva</div>
+              <div class="profile__role">Full‑Stack Developer</div>
+            </div>
+          </div>
+          <div class="card__divider"></div>
+          <ul class="mini-list" aria-label="Quick links">
+            <li>
+              <a class="mini-link" href="https://www.linkedin.com/in/pritesh-jethva-74621025a/" target="_blank"
+                rel="noreferrer">
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a class="mini-link" href="https://github.com/PriteshJethva" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a class="mini-link"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=pritesh.pvt@gmail.com&su=Project%20Inquiry&body=Hi%20Pritesh%2C%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+                target="_blank">
+                Email
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card glass card--now reveal" style="--reveal-delay:120ms">
+          <div class="card__title">Now</div>
+          <p class="card__text">
+            Currently focused on backend development, API design, and real-world projects.
+          </p>
+          <div class="chips" aria-label="Focus areas">
+            <span class="chip">Node.js</span>
+            <span class="chip">React.js</span>
+            <span class="chip">Express.js</span>
+            <span class="chip">REST APIs</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" class="container section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__subtitle">A few things I’ve built recently.</p>
+      </div>
+
+      <div class="cards">
+        <article class="project glass reveal" style="--reveal-delay:240ms" data-project data-title="Project Three"
+          data-desc="A design-forward project showcasing animation, layout, and visual polish."
+          data-stack="HTML • CSS • Motion"
+          data-points="Glass UI with accessible contrast|Micro-interactions that feel snappy|Mobile-first layout">
+          <div class="project__top">
+            <div class="project__icon" aria-hidden="true">
+              🧩</div>
+            <div class="project__meta">
+              <h3 class="project__title">Smart Job Tracker API <div>(In Progress)</div>
+              </h3>
+              <p class="project__desc">
+                Backend system to track job applications with structured status flow, analytics, and automated email
+                reminders.
+              </p>
+            </div>
+          </div>
+          <div class="project__tags" aria-label="Tech stack">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Mongoose</span>
+            <span class="tag">JWT</span>
+            <span class="tag">REST API</span>
+          </div>
+          <div class="project__actions">
+            <!-- <button class="btn btn--ghost btn--sm" type="button" data-project-open>
+              Live
+            </button> -->
+            <a class="btn btn--ghost btn--sm" href="#" aria-disabled="true">Live</a>
+            <a class="btn btn--text btn--sm" href="#" aria-disabled="true">
+              Code <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project glass reveal" style="--reveal-delay:240ms" data-project data-title="Project Three"
+          data-desc="A design-forward project showcasing animation, layout, and visual polish."
+          data-stack="HTML • CSS • Motion"
+          data-points="Glass UI with accessible contrast|Micro-interactions that feel snappy|Mobile-first layout">
+          <div class="project__top">
+            <div class="project__icon" aria-hidden="true">🏠</div>
+            <div class="project__meta">
+              <h3 class="project__title">Smart Home Dashboard</h3>
+              <p class="project__desc">
+                A real-time smart home dashboard to monitor and control IoT devices, visualize energy usage, and
+                automate home routines with an intuitive UI.
+              </p>
+            </div>
+          </div>
+          <div class="project__tags" aria-label="Tech stack">
+            <span class="tag">React / Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Motion</span>
+          </div>
+          <div class="project__actions">
+            <!-- <button class="btn btn--ghost btn--sm" type="button" data-project-open>
+              Live
+            </button> -->
+            <a class="btn btn--ghost btn--sm" href="#" aria-disabled="true">Live</a>
+            <a class="btn btn--text btn--sm" href="#" aria-disabled="true">
+              Code <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="project glass reveal" style="--reveal-delay:240ms" data-project data-title="Project Three"
+          data-desc="A design-forward project showcasing animation, layout, and visual polish."
+          data-stack="HTML • CSS • Motion"
+          data-points="Glass UI with accessible contrast|Micro-interactions that feel snappy|Mobile-first layout">
+          <div class="project__top">
+            <div class="project__icon" aria-hidden="true">🔐</div>
+            <div class="project__meta">
+              <h3 class="project__title">Password Generator</h3>
+              <p class="project__desc">
+                Secure password generator with customizable options and real-time strength validation.
+              </p>
+            </div>
+          </div>
+          <div class="project__tags" aria-label="Tech stack">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">DOM Manipulation</span>
+            <span class="tag">Random Generation</span>
+          </div>
+          <div class="project__actions">
+
+            <a class="btn btn--ghost btn--sm" href="https://priteshjethva.github.io/password_generator/" target="_blank"
+              aria-disabled="true">Live</a>
+            <a class="btn btn--text btn--sm" href="https://github.com/PriteshJethva/password_generator" target="_blank"
+              aria-disabled="true">
+              Code <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="container section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Experience</h2>
+        <p class="section__subtitle">Fresher — here’s what I’m learning and what I’m looking for.</p>
+      </div>
+
+      <div class="timeline glass reveal">
+        <div class="timeline__item">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <div class="timeline__top">
+              <div class="timeline__role">Education</div>
+              <!-- <div class="timeline__time">2023 – Present (Expected 2027)</div> -->
+            </div>
+            <div class="timeline__place">
+Gujarat Technological University (GTU)</div>
+            <ul class="timeline__list">
+              <li>Bachelor of Engineering (B.E)</li>
+              <li>2023 – Present (Expected 2027)</li>
+              <li>4-Year Degree Program</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline__item">
+          <div class="timeline__dot" aria-hidden="true"></div>
+          <div class="timeline__body">
+            <div class="timeline__top">
+              <div class="timeline__role">Hands‑on learning</div>
+              <div class="timeline__time"></div>
+            </div>
+            <div class="timeline__place">Skywin IT Academy • Full Stack Development (Completed)</div>
+            <ul class="timeline__list">
+              <li>Completed structured training in MERN Stack (MongoDB, Express.js, React, Node.js)</li>
+              <li>Gained practical experience with Git, REST APIs, authentication (JWT), and database design</li>
+              <li>Improving fundamentals: Git workflow, debugging, and code quality.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__subtitle">Tools and strengths I use to ship.</p>
+      </div>
+
+      <div class="skills-2">
+        <div class="skill-card glass reveal" style="--reveal-delay:0ms">
+          <h3 class="skill-card__title">My Skills</h3>
+          <div class="skill-bars" aria-label="Skill levels">
+            <div class="skillbar">
+              <div class="skillbar__top">
+                <span class="skillbar__name">HTML &amp; CSS</span>
+                <span class="skillbar__pct">90%</span>
+              </div>
+              <div class="skillbar__track" role="progressbar" aria-label="HTML and CSS" aria-valuenow="90"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="skillbar__fill" style="--w: 90%"></div>
+              </div>
+            </div>
+
+            <div class="skillbar">
+              <div class="skillbar__top">
+                <span class="skillbar__name">JavaScript</span>
+                <span class="skillbar__pct">85%</span>
+              </div>
+              <div class="skillbar__track" role="progressbar" aria-label="JavaScript" aria-valuenow="85"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="skillbar__fill" style="--w: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skillbar">
+              <div class="skillbar__top">
+                <span class="skillbar__name">React</span>
+                <span class="skillbar__pct">82%</span>
+              </div>
+              <div class="skillbar__track" role="progressbar" aria-label="React" aria-valuenow="82" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="skillbar__fill" style="--w: 82%"></div>
+              </div>
+            </div>
+
+            <div class="skillbar">
+              <div class="skillbar__top">
+                <span class="skillbar__name">TypeScript</span>
+                <span class="skillbar__pct">83%</span>
+              </div>
+              <div class="skillbar__track" role="progressbar" aria-label="TypeScript" aria-valuenow="83"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="skillbar__fill" style="--w: 83%"></div>
+              </div>
+            </div>
+
+            <div class="skillbar">
+              <div class="skillbar__top">
+                <span class="skillbar__name">Node.js</span>
+                <span class="skillbar__pct">85%</span>
+              </div>
+              <div class="skillbar__track" role="progressbar" aria-label="Node.js" aria-valuenow="85" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="skillbar__fill" style="--w: 85%"></div>
+              </div>
+            </div>
+
+            <div class="skillbar">
+              <div class="skillbar__top">
+                <span class="skillbar__name">SQL (Basics)</span>
+                <span class="skillbar__pct">80%</span>
+              </div>
+              <div class="skillbar__track" role="progressbar" aria-label="SQL basics" aria-valuenow="80"
+                aria-valuemin="0" aria-valuemax="100">
+                <div class="skillbar__fill" style="--w: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal" style="--reveal-delay:140ms">
+          <h3 class="skill-card__title">Areas of Expertise</h3>
+          <ul class="expertise">
+            <li>Building responsive, modern UIs using React and component-based architecture</li>
+            <li>Creating reusable components and scalable frontend structures</li>
+            <li>Developing and consuming REST APIs, handling auth (JWT) and data flow</li>
+            <li>Writing clean, maintainable code with focus on performance and UX</li>
+            <li>Using Git for version control, debugging, and efficient development workflow</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <div class="section__head reveal">
+        <h2 class="section__title">About</h2>
+        <p class="section__subtitle">A bit more context.</p>
+      </div>
+
+      <div class="about glass reveal">
+        <p>
+          I’m a fresher full‑stack developer who enjoys building projects that feel great to use.
+          I focus on clean UI, strong fundamentals, and writing code that’s easy to understand and
+          improve.
+        </p>
+        <p>
+          I’m looking for an opportunity where I can learn from a strong team, contribute to real
+          product work, and grow quickly through feedback.
+        </p>
+        <p>
+          What you can expect from me: consistent effort, clear communication, and a bias for
+          shipping. I like breaking problems down, iterating fast, and polishing the details.
+        </p>
+        <p>
+          Current focus: React + TypeScript on the front‑end, Node/REST APIs on the back‑end, and
+          improving core CS basics (DSA, databases, and system thinking).
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <div class="section__head reveal">
+        <h2 class="section__title">Get In Touch</h2>
+        <p class="section__subtitle">Let’s connect — I’m open to fresher opportunities.</p>
+      </div>
+
+      <div class="contact contact--ref">
+        <div class="glass contact__side contact__side--ref reveal">
+          <div class="contact__card">
+            <div class="card__title">Connect With Me</div>
+            <ul class="contact-links" aria-label="Contact links">
+              <li>
+                <a class="contact-link" href="/cdn-cgi/l/email-protection#3940564c795c41585449555c175a5654">
+                  <span class="contact-link__k">Email</span>
+                  <span class="contact-link__v"><span class="__cf_email__"
+                      data-cfemail="9be2f4eedbfee3faf6ebf7feb5f8f4f6">pritesh.pvt@gmail.com</span></span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="tel:+910000000000">
+                  <span class="contact-link__k">Phone</span>
+                  <span class="contact-link__v">+91 99047 45886</span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="https://www.linkedin.com/in/pritesh-jethva-74621025a/" target="_blank" rel="noreferrer">
+                  <span class="contact-link__k">LinkedIn</span>
+                  <span class="contact-link__v">Pritesh Jethva</span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="https://github.com/PriteshJethva target="_blank" rel="noreferrer">
+                  <span class="contact-link__k">GitHub</span>
+                  <span class="contact-link__v">PriteshJethva</span>
+                </a>
+              </li>
+              <!-- <li>
+                <a class="contact-link" href="https://leetcode.com/" target="_blank" rel="noreferrer">
+                  <span class="contact-link__k">LeetCode</span>
+                  <span class="contact-link__v">your-profile</span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="https://www.hackerrank.com/" target="_blank" rel="noreferrer">
+                  <span class="contact-link__k">HackerRank</span>
+                  <span class="contact-link__v">your-profile</span>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+
+        <form class="glass contact__form reveal" style="--reveal-delay:120ms" id="contactForm"
+          action="https://formspree.io/f/mykbnwyy" method="POST">
+          <div class="card__title">Send a Message</div>
+          <input type="hidden" name="subject" value="New message from portfolio website" />
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="Enter your email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required
+              placeholder="Tell me what you're building…"></textarea>
+          </div>
+
+          <div class="contact__actions">
+            <button class="btn btn--primary" type="submit">Send Message</button>
+            <p class="form-hint" id="formHint" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <span class="footer__brand">PJ</span>
+        <span class="footer__sep" aria-hidden="true">•</span>
+        <span class="footer__copy">© <span id="year"></span></span>
+      </div>
+      <div class="footer__right">
+        <a class="footer__link" href="#main">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top glass" type="button" id="toTop" aria-label="Back to top" hidden>
+    ↑
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+  <!-- <dialog class="modal glass" id="projectModal" aria-label="Project details">
+    <form method="dialog" class="modal__inner">
+      <div class="modal__head">
+        <div>
+          <div class="modal__title" id="modalTitle">Failed To Fetch</div>
+          <div class="modal__sub" id="modalStack"></div>
+        </div>
+        <button class="icon-btn" value="cancel" aria-label="Close project">
+          <span class="icon-btn__icon" aria-hidden="true">✕</span>
+        </button>
+      </div>
+      </form>
+      </dialog>
+      <p class="modal__desc" id="modalDesc -->
